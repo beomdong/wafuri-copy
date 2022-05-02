@@ -1,11 +1,24 @@
 <template>
-  <div class="navbar">
+  <div class="header">
     <!-- <router-link to="/character" class="nav-brand">
       <div>
         <img src="../assets/wafuri-logo.png" alt="로고" />
       </div>
     </router-link> -->
+    <router-link to="/character">
+      <img src="../assets/wafuri-logo.png" alt="로고" class="logo" />
+    </router-link>
     <router-link to="/character"> 캐릭터 </router-link>
+    <router-link to="/equipt"> 장비 </router-link>
+    <router-link to="/formation"> 편성 </router-link>
+    <router-link to="/stats"> 통계 </router-link>
+    <router-link to="/follow"> 친구찾기 </router-link>
+    <router-link to="/multi"> 멀티모집 </router-link>
+    <router-link to="/gacha"> 가챠시뮬 </router-link>
+    <router-link to="/vote"> 인기투표 </router-link>
+    <router-link to="/guestbook"> 방명록 </router-link>
+    <router-link to="/bot"> 디아봇 </router-link>
+    <button class="loginBtn">로그인</button>
   </div>
 </template>
 
@@ -14,35 +27,30 @@ export default {};
 </script>
 
 <style>
-/* .navbar {
-  background: #2d2d2d;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  padding: 0 1rem;
-  -webkit-box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
-  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+.logo {
+  width: 120px;
+  height: 35px;
+  -o-object-fit: contain;
+  object-fit: cover;
+}
+
+.header {
+  background-color: #f8f9fa !important;
+  font-size: 15px;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
-} */
-.navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
 }
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
+
+.loginBtn {
+  float: right;
+  background-color: #007bff;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
 }
-.navbar-brand {
-  padding: 3px 0;
-}
-#img {
-  vertical-align: middle;
-  border-style: none;
+.loginBtn:hover {
+  background-color: #0063ce;
+  text-align: center;
+  transition-duration: 0.3s;
 }
 </style>

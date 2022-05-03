@@ -24,21 +24,7 @@
 export default {};
 </script>
 
-<style>
-@import "../css/reset";
-body {
-  background-image: url("../assets/bg.png");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position-x: 0px;
-  background-position-y: 0px;
-  background-size: initial;
-  /* background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial; */
-}
-
+<style scoped>
 .buttonclass {
   display: inline-flex;
   background-color: #f8f9fa !important;
@@ -55,13 +41,14 @@ body {
   object-fit: cover;
 }
 
-.header:not(span) {
+.header {
   display: flex;
   background-color: #f8f9fa !important;
   font-size: 15px;
   box-shadow: 0 5px 5px -5px rgb(0 0 0 / 20%);
   align-items: center;
-  margin: 0px;
+  margin-left: 16px;
+  margin-right: 16px;
   justify-content: flex-start;
 }
 
@@ -110,6 +97,7 @@ a.router-link-exact-active {
   -o-object-fit: contain;
   object-fit: cover;
   display: none;
+  margin-left: auto;
 }
 .menu:hover {
   cursor: pointer;

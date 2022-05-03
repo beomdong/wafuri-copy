@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <nav class="header">
       <router-link to="/character" class="linklogo">
@@ -28,6 +28,19 @@ export default {};
 </script>
 
 <style>
+body {
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-repeat: repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-size: initial;
+  /* background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial; */
+}
 .logo {
   width: 120px;
   height: 35px;
@@ -42,10 +55,11 @@ export default {};
   box-shadow: 0 5px 5px -5px rgb(0 0 0 / 20%);
   align-items: center;
   justify-content: space-between;
+  margin: 17px;
 }
 
 .loginBtn {
-  float: right;
+  float: right !important;
   background-color: #007bff;
   color: white;
   width: 80px;
@@ -59,14 +73,25 @@ export default {};
   transition-duration: 0.3s;
   cursor: pointer;
 }
+.linkstyle {
+  padding: 7px;
+  color: grey;
+}
 .linkstyle:hover {
   background-color: rgb(228, 224, 224);
+  color: black;
   border-radius: 5px;
   cursor: pointer;
-  padding: 10px;
+  padding: 7px;
 }
+
+a {
+  text-decoration: none;
+}
+
 a.router-link-exact-active {
   font-size: 17px;
+  color: black;
   font-weight: 1000;
 }
 .linklogo {

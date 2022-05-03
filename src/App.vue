@@ -2,7 +2,7 @@
   <div>
     <wafuri-tool></wafuri-tool>
     <transition name="page">
-      <router-view></router-view>
+      <router-view />
     </transition>
   </div>
 </template>

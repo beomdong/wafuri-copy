@@ -1,6 +1,5 @@
 <template>
-  <div class="background">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <div id="background">
     <nav class="header">
       <router-link to="/character" class="linklogo">
         <img src="../assets/wafuri-logo.png" alt="로고" class="logo" />
@@ -15,9 +14,7 @@
       <router-link to="/vote" class="linkstyle"> 인기투표 </router-link>
       <router-link to="/guestbook" class="linkstyle"> 방명록 </router-link>
       <router-link to="/bot" class="linkstyle"> 디아봇 </router-link>
-      <span>
-        <img src="../assets/menu.png" alt="메뉴" class="menu" />
-      </span>
+      <img src="../assets/menu.png" alt="메뉴" class="menu" />
       <button class="loginBtn">로그인</button>
     </nav>
   </div>
@@ -28,10 +25,10 @@ export default {};
 </script>
 
 <style>
+@import "../css/reset";
 body {
   background-image: url("../assets/bg.png");
   background-size: cover;
-  background-repeat: repeat;
   background-repeat: repeat;
   background-position-x: 0px;
   background-position-y: 0px;
@@ -41,6 +38,16 @@ body {
   background-clip: initial;
   background-color: initial; */
 }
+
+.buttonclass {
+  display: inline-flex;
+  background-color: #f8f9fa !important;
+  box-shadow: 0 5px 5px -5px rgb(0 0 0 / 20%);
+  align-items: center;
+  font-size: 15px;
+  margin: 0px;
+}
+
 .logo {
   width: 120px;
   height: 35px;
@@ -48,18 +55,18 @@ body {
   object-fit: cover;
 }
 
-.header {
+.header:not(span) {
   display: flex;
   background-color: #f8f9fa !important;
   font-size: 15px;
   box-shadow: 0 5px 5px -5px rgb(0 0 0 / 20%);
   align-items: center;
-  justify-content: space-between;
-  margin: 17px;
+  margin: 0px;
+  justify-content: flex-start;
 }
 
 .loginBtn {
-  float: right !important;
+  margin-left: auto;
   background-color: #007bff;
   color: white;
   width: 80px;

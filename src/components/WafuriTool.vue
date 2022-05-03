@@ -31,7 +31,7 @@ export default {};
   box-shadow: 0 5px 5px -5px rgb(0 0 0 / 20%);
   align-items: center;
   font-size: 15px;
-  margin: 0px;
+  margin: 0;
 }
 
 .logo {

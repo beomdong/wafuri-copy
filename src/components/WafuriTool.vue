@@ -39,6 +39,7 @@ export default {};
   height: 35px;
   -o-object-fit: contain;
   object-fit: cover;
+  margin-left: 16px;
 }
 
 .header {
@@ -47,8 +48,6 @@ export default {};
   font-size: 15px;
   box-shadow: 0 5px 5px -5px rgb(0 0 0 / 20%);
   align-items: center;
-  margin-left: 16px;
-  margin-right: 16px;
   justify-content: flex-start;
 }
 
@@ -61,6 +60,7 @@ export default {};
   border-radius: 5px;
   text-align: center;
   align-items: center;
+  margin-right: 16px;
 }
 .loginBtn:hover {
   background-color: #0063ce;
